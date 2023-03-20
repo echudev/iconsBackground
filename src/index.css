@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-image: radial-gradient(
+      circle at top,
+      hsl(214, 47%, 23%) 20%,
+      hsl(237, 49%, 15%)
+    );
+    text-transform: uppercase;
+  }
+}
