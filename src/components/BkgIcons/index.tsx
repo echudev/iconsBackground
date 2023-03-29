@@ -9,28 +9,20 @@ import muiIcon from '../../assets/mui.png'
 import mysqlIcon from '../../assets/mysql.png'
 import firebaseIcon from '../../assets/firebase.png'
 
-interface IconProps {
-  source: string
-}
-const Icon = ({ source }: IconProps) => {
-  return (
-        <img src={source} alt={`${source}-icon`} className="w-16 h-16 m-10 rounded-xl bg-slate-500 saturate-50 p-3" />
-  )
-}
-
+const iconBaseClass: string = 'w-16 h-16 m-10 rounded-xl bg-iconBkg saturate-50 p-3'
 const BkgIcons = () => {
   return (
-    <div className="container relative border flex justify-center flex-wrap mt-10 select-none" >
-    <Icon source={jsIcon} />
-    <Icon source={reactIcon} />
-    <Icon source={tsIcon} />
-    <Icon source={htmlIcon} />
-    <Icon source={cssIcon} />
-    <Icon source={gitIcon} />
-    <Icon source={tailwindIcon} />
-    <Icon source={muiIcon} />
-    <Icon source={mysqlIcon} />
-    <Icon source={firebaseIcon} />
+    <div className="grid grid-cols-4 justify-items-center h-full w-full select-none" >
+    <img src={jsIcon} className={`${iconBaseClass}`}/>
+    <img src={reactIcon} className={`${iconBaseClass}`}/>
+    <img src={tsIcon} className={`${iconBaseClass}`}/>
+    <img src={htmlIcon}className={`${iconBaseClass}`} />
+    <img src={cssIcon} className={`${iconBaseClass}`}/>
+    <img src={gitIcon} className={`${iconBaseClass}`}/>
+    <img src={tailwindIcon} className={`${iconBaseClass}`}/>
+    <img src={muiIcon} className={`${iconBaseClass}`}/>
+    <img src={mysqlIcon} className={`${iconBaseClass}`}/>
+    <img src={firebaseIcon} className={`${iconBaseClass}`}/>
     </div>
   )
 }

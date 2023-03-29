@@ -1,9 +1,18 @@
 import BkgIcons from './components/BkgIcons'
+
+const objeto1 = {
+  nombre: 'Juan',
+  apellido: 'Perez',
+  edad: 30,
+  direccion: {
+  }
+}
+
 function App () {
   return (
     <div>
-      <header>
-        <h3>Hola, soy un nuevo portfolio despues de un mes sin tocar nada</h3>
+      <header className="h-screen w-screen">
+        <h1>{objeto1.nombre}</h1>
       <BkgIcons />
       </header>
     </div>
