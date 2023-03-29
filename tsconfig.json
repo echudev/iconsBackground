@@ -15,7 +15,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "types": ["vitest/globals"]
   },
-  "include": ["src", "postcss.config.cjs", "tailwind.config.cjs"],
+  "include": ["src", "postcss.config.cjs"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
