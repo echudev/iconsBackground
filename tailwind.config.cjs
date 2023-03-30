@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        iconBkg: "rgba(46, 46, 212, 0.45)",
+        iconBkg: "rgba(146, 146, 212, 0.25)",
       },
     }
   },
