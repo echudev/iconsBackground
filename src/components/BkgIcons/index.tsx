@@ -1,61 +1,50 @@
-import jsIcon from "../../assets/js.png";
-import reactIcon from "../../assets/react.png";
-import tsIcon from "../../assets/ts.png";
-import htmlIcon from "../../assets/html.png";
-import cssIcon from "../../assets/css.png";
-import gitIcon from "../../assets/git.png";
-import tailwindIcon from "../../assets/tailwind.png";
-import muiIcon from "../../assets/mui.png";
-import mysqlIcon from "../../assets/mysql.png";
-import firebaseIcon from "../../assets/firebase.png";
+import js from "../../assets/js.png";
+import react from "../../assets/react.png";
+import ts from "../../assets/ts.png";
+import html from "../../assets/html.png";
+import css from "../../assets/css.png";
+import git from "../../assets/git.png";
+import tlwnd from "../../assets/tailwind.png";
+import mui from "../../assets/mui.png";
+import mysql from "../../assets/mysql.png";
+import fbse from "../../assets/firebase.png";
 
-const style: string = "rounded-xl bg-iconBkg contrast-50 p-3";
-const style2: string =
-  "rounded-xl border border-2 border-iconBkg contrast-50 p-3";
-const small: string = "w-12 h-12 z-0";
-const medium: string = "w-16 h-16 z-10";
-const large: string = "w-20 h-20 z-20";
-
-interface FlexProps {
-  children: React.ReactNode;
-}
-const Flex = ({ children }: FlexProps) => {
-  return (
-    <div className="flex items-center w-full h-full select-none">
-      {children}
-    </div>
-  );
-};
+const style: string = "absolute rounded-xl bg-iconBkg p-3";
+const style2: string = "absolute rounded-xl border border-4 border-iconBkg p-3";
+const small: string = "w-12 h-12 z-0 opacity-30";
+const small2: string = "w-12 h-12 z-0 opacity-10";
+const medium: string = "w-16 h-16 z-10 opacity-50";
+const large: string = "w-20 h-20 z-20 opacity-50";
+const large2: string = "w-20 h-20 z-20 opacity-20";
 
 const BkgIcons = () => {
   return (
-    <div className="flex flex-col h-full">
-      <Flex>
-        <div className={`${style} ${large}`}></div>
-        <div className={`${style} ${large}`}>
-          <img src={jsIcon} className="rounded-md" />
-        </div>
-        <img src={htmlIcon} className={`${style} ${small}`} />
-      </Flex>
-
-      <Flex>
-        <img src={gitIcon} className={`${style} ${medium}`} />
-        <img src={tailwindIcon} className={`${style} ${large}`} />
-        <img src={muiIcon} className={`${style} ${medium}`} />
-        <img src={reactIcon} className={`${style} ${large}`} />
-      </Flex>
-
-      <Flex>
-        <div className={`${style} ${small}`}></div>
-        <img src={mysqlIcon} className={`${style} ${medium}`} />
-        <div className={`${style2} ${small}`}></div>
-        <img src={cssIcon} className={`${style} ${small}`} />
-      </Flex>
-
-      <Flex>
-        <img src={tsIcon} className={`${style} ${large}`} />
-        <img src={firebaseIcon} className={`${style} ${medium}`} />
-      </Flex>
+    <div className="w-full h-full z-30 bg-repeat bg-overlay-pattern">
+      <div className="relative flex w-full h-full select-none">
+        <img src={js} className={`${style} ${large} top-[15%] left-[25%]`} />
+        <img src={html} className={`${style} ${medium} top-[30%] left-[10%]`} />
+        <img src={git} className={`${style} ${medium} top-[25%] left-[60%]`} />
+        <img src={tlwnd} className={`${style} ${large} top-[35%] left-[40%]`} />
+        <img src={mui} className={`${style} ${medium} top-[55%] left-[20%]`} />
+        <img src={react} className={`${style} ${large} top-[55%] left-[60%]`} />
+        <img
+          src={mysql}
+          className={`${style} ${medium} top-[65%] left-[30%]`}
+        />
+        <img src={css} className={`${style} ${medium} top-[3%] left-[40%]`} />
+        <img src={ts} className={`${style} ${large} top-[15%] left-[75%]`} />
+        <img src={fbse} className={`${style} ${medium} top-[50%] left-[80%]`} />
+        <div className={`${style2} ${small} top-[80%] left-[20%]`}></div>
+        <div className={`${style2} ${small} top-[5%] left-[7%]`}></div>
+        <div className={`${style} ${small} top-[5%] left-[19%]`}></div>
+        <div className={`${style} ${large2} top-[40%] left-[65%]`}></div>
+        <div className={`${style} ${small2} top-[72%] left-[70%]`}></div>
+        <div className={`${style2} ${small} top-[20%] left-[45%]`}></div>
+        <div className={`${style2} ${small} top-[60%] left-[90%]`}></div>
+        <div className={`${style} ${small} top-[45%] left-[30%]`}></div>
+        <div className={`${style} ${small2} top-[55%] left-[40%]`}></div>
+        <div className={`${style} ${small2} top-[60%] left-[10%]`}></div>
+      </div>
     </div>
   );
 };

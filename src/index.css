@@ -10,11 +10,9 @@
     color: white;
     height: 100%;
     width: 100%;
-    background-image: radial-gradient(
-      circle at top, 
-      hsl(259, 72%, 17%) 30%,
-      hsl(230, 18%, 7%)
-    );
+    background: #441876;
+background: -webkit-radial-gradient(circle, #441876 0%, #250f3b 50%, #000000 100%);
+background: radial-gradient(circle, #441876 0%, #250f3b 50%, #000000 100%);
     text-transform: uppercase;
   }
 }
