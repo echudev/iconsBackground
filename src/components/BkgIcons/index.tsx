@@ -1,4 +1,14 @@
-import { useState, useRef, useEffect } from "react";
+import { useRef } from "react";
+import { useIconTransform } from "../../hooks/useIconTransform";
+import {
+  style,
+  style2,
+  small2,
+  small3,
+  medium,
+  medium2,
+  large,
+} from "../../utils/constants";
 import js from "../../assets/js.png";
 import react from "../../assets/react.png";
 import ts from "../../assets/ts.png";
@@ -13,63 +23,10 @@ import mgo from "../../assets/mongo.png";
 import gh from "../../assets/gh.png";
 import nde from "../../assets/node.png";
 
-const style: string =
-  "absolute rounded-xl bg-iconBkg p-3 pointer-events-none transition-transform ease-out duration-[3000ms]";
-const style2: string =
-  "absolute rounded-xl border border-4 border-iconBkg p-3 pointer-events-none transition-transform ease-out duration-[3000ms]";
-const small2: string = "w-12 h-12 z-0 opacity-20";
-const small3: string = "w-12 h-12 z-0 opacity-10";
-const medium: string = "w-16 h-16 z-10 opacity-30";
-const medium2: string = "w-16 h-16 z-10 opacity-10";
-const large: string = "w-20 h-20 z-20 opacity-30";
-const large2: string = "w-20 h-20 z-20 opacity-20";
-
-interface MousePosition {
-  offsetX: number;
-  offsetY: number;
-}
-interface IconTransform {
-  slow: number;
-  normal: number;
-  fast: number;
-}
-
 const BkgIcons = () => {
   const container = useRef<HTMLDivElement | null>(null);
-  const [iconTransformX, setIconTransformX] = useState<IconTransform>({
-    slow: 0,
-    normal: 0,
-    fast: 0,
-  });
-  const [iconTransformY, setIconTransformY] = useState<IconTransform>({
-    slow: 0,
-    normal: 0,
-    fast: 0,
-  });
-  const [halfWidth, setHalfWidth] = useState<number>(1);
-  const [halfHeight, setHalfHeight] = useState<number>(1);
-
-  const handleMousePosition = ({ offsetX, offsetY }: MousePosition) => {
-    setIconTransformX({
-      fast: ((offsetX - halfWidth) / halfWidth) * 250,
-      normal: ((offsetX - halfWidth) / halfWidth) * 200,
-      slow: ((offsetX - halfWidth) / halfWidth) * 150,
-    });
-    setIconTransformY({
-      fast: ((offsetY - halfHeight) / halfHeight) * 150,
-      normal: ((offsetY - halfHeight) / halfHeight) * 100,
-      slow: ((offsetY - halfHeight) / halfHeight) * 50,
-    });
-  };
-
-  useEffect(() => {
-    if (container.current) {
-      const { width, height } = container.current.getBoundingClientRect();
-      setHalfWidth(width / 2);
-      setHalfHeight(height / 2);
-      console.log(width, height, halfWidth, halfHeight);
-    }
-  }, [window.innerWidth, window.innerHeight]);
+  const { iconTransformX, iconTransformY, handleMousePosition } =
+    useIconTransform(container);
 
   return (
     <div
@@ -83,7 +40,7 @@ const BkgIcons = () => {
           style={{
             transform: `translate(${iconTransformX.fast}px, ${iconTransformY.fast}px)`,
           }}
-          className={`${style} ${large} top-[15%] left-[25%]`}
+          className={`${style} ${large} top-[15%] left-[20%]`}
         />
         <img
           src={htm}
@@ -104,7 +61,7 @@ const BkgIcons = () => {
           style={{
             transform: `translate(${iconTransformX.fast}px, ${iconTransformY.fast}px)`,
           }}
-          className={`${style} ${large} top-[35%] left-[40%]`}
+          className={`${style} ${large} top-[12%] left-[35%]`}
         />
         <img
           src={mui}
@@ -137,16 +94,16 @@ const BkgIcons = () => {
         <img
           src={gh}
           style={{
-            transform: `translate(${iconTransformX.normal}px, ${iconTransformY.normal}px)`,
+            transform: `translate(${iconTransformX.fast}px, ${iconTransformY.fast}px)`,
           }}
-          className={`${style} ${large2} top-[15%] left-[80%]`}
+          className={`${style} ${large} top-[35%] left-[74%]`}
         />
         <img
           src={fbse}
           style={{
             transform: `translate(${iconTransformX.normal}px, ${iconTransformY.normal}px)`,
           }}
-          className={`${style} ${medium} top-[38%] left-[85%]`}
+          className={`${style} ${medium} top-[24%] left-[46%]`}
         />
         <img
           src={msql}
@@ -179,7 +136,7 @@ const BkgIcons = () => {
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style2} ${small2} top-[5%] left-[7%]`}
+          className={`${style2} ${small2} top-[17%] left-[13%]`}
         ></div>
         <div
           style={{
@@ -191,7 +148,7 @@ const BkgIcons = () => {
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style} ${large2} top-[40%] left-[70%]`}
+          className={`${style} ${medium2} top-[40%] left-[70%]`}
         ></div>
         <div
           style={{
@@ -251,7 +208,7 @@ const BkgIcons = () => {
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style2} ${small2} top-[45%] left-[50%]`}
+          className={`${style2} ${small2} top-[40%] left-[56%]`}
         ></div>
         <div
           style={{
