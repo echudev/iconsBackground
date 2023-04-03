@@ -26,9 +26,9 @@ export const useIconTransform = (container: RefObject<HTMLElement>) => {
   
     const handleMousePosition = ({ offsetX, offsetY }: MousePosition) => {
       setIconTransformX({
-        fast: ((offsetX - halfWidth) / halfWidth) * 250,
-        normal: ((offsetX - halfWidth) / halfWidth) * 200,
-        slow: ((offsetX - halfWidth) / halfWidth) * 150,
+        fast: ((offsetX - halfWidth) / halfWidth) * 300,
+        normal: ((offsetX - halfWidth) / halfWidth) * 240,
+        slow: ((offsetX - halfWidth) / halfWidth) * 120,
       });
       setIconTransformY({
         fast: ((offsetY - halfHeight) / halfHeight) * 150,

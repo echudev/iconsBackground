@@ -40,181 +40,181 @@ const BkgIcons = () => {
           style={{
             transform: `translate(${iconTransformX.fast}px, ${iconTransformY.fast}px)`,
           }}
-          className={`${style} ${large} top-[15%] left-[20%]`}
+          className={`${style} ${large} top-[15%] left-[28%]`}
         />
         <img
           src={htm}
           style={{
             transform: `translate(${iconTransformX.normal}px, ${iconTransformY.normal}px)`,
           }}
-          className={`${style} ${medium} top-[30%] left-[10%]`}
+          className={`${style} ${medium} top-[30%] left-[15%]`}
         />
         <img
           src={git}
           style={{
             transform: `translate(${iconTransformX.normal}px, ${iconTransformY.normal}px)`,
           }}
-          className={`${style} ${medium} top-[28%] left-[65%]`}
+          className={`${style} ${medium} top-[40%] left-[28%]`}
         />
         <img
           src={ts}
           style={{
             transform: `translate(${iconTransformX.fast}px, ${iconTransformY.fast}px)`,
           }}
-          className={`${style} ${large} top-[12%] left-[35%]`}
+          className={`${style} ${large} top-[10%] left-[42%]`}
         />
         <img
           src={mui}
           style={{
             transform: `translate(${iconTransformX.normal}px, ${iconTransformY.normal}px)`,
           }}
-          className={`${style} ${medium} top-[55%] left-[20%]`}
+          className={`${style} ${medium} top-[55%] left-[25%]`}
         />
         <img
           src={react}
           style={{
             transform: `translate(${iconTransformX.fast}px, ${iconTransformY.fast}px)`,
           }}
-          className={`${style} ${large} top-[55%] left-[60%]`}
+          className={`${style} ${large} top-[55%] left-[70%]`}
         />
         <img
           src={mgo}
           style={{
             transform: `translate(${iconTransformX.fast}px, ${iconTransformY.fast}px)`,
           }}
-          className={`${style} ${large} top-[65%] left-[30%]`}
+          className={`${style} ${large} top-[65%] left-[35%]`}
         />
         <img
           src={css}
           style={{
             transform: `translate(${iconTransformX.normal}px, ${iconTransformY.normal}px)`,
           }}
-          className={`${style} ${medium} top-[3%] left-[40%]`}
+          className={`${style} ${medium} top-[28%] left-[36%]`}
         />
         <img
           src={gh}
           style={{
             transform: `translate(${iconTransformX.fast}px, ${iconTransformY.fast}px)`,
           }}
-          className={`${style} ${large} top-[35%] left-[74%]`}
+          className={`${style} ${large} top-[23%] left-[72%]`}
         />
         <img
           src={fbse}
           style={{
             transform: `translate(${iconTransformX.normal}px, ${iconTransformY.normal}px)`,
           }}
-          className={`${style} ${medium} top-[24%] left-[46%]`}
+          className={`${style} ${medium} top-[24%] left-[51%]`}
         />
         <img
           src={msql}
           style={{
             transform: `translate(${iconTransformX.normal}px, ${iconTransformY.normal}px)`,
           }}
-          className={`${style} ${medium} top-[55%] left-[75%]`}
+          className={`${style} ${medium} top-[37%] left-[65%]`}
         />
         <img
           src={nde}
           style={{
             transform: `translate(${iconTransformX.normal}px, ${iconTransformY.normal}px)`,
           }}
-          className={`${style} ${medium} top-[50%] left-[50%]`}
+          className={`${style} ${medium} top-[60%] left-[58%]`}
         />
         <img
           src={tlwnd}
           style={{
             transform: `translate(${iconTransformX.fast}px, ${iconTransformY.fast}px)`,
           }}
-          className={`${style} ${large} top-[12%] left-[55%]`}
+          className={`${style} ${large} top-[12%] left-[60%]`}
         />
         <div
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style2} ${small2} top-[80%] left-[20%]`}
+          className={`${style2} ${small2} top-[80%] left-[25%]`}
         ></div>
         <div
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style2} ${small2} top-[17%] left-[13%]`}
+          className={`${style2} ${small2} top-[17%] left-[18%]`}
         ></div>
         <div
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style} ${small2} top-[5%] left-[19%]`}
+          className={`${style} ${small2} top-[5%] left-[24%]`}
         ></div>
         <div
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style} ${medium2} top-[40%] left-[70%]`}
+          className={`${style} ${medium2} top-[40%] left-[75%]`}
         ></div>
         <div
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style} ${small2} top-[72%] left-[70%]`}
+          className={`${style} ${small2} top-[72%] left-[75%]`}
         ></div>
         <div
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style2} ${small2} top-[20%] left-[45%]`}
+          className={`${style2} ${small2} top-[20%] left-[50%]`}
         ></div>
         <div
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style2} ${small2} top-[60%] left-[90%]`}
+          className={`${style2} ${small2} top-[20%] left-[75%]`}
         ></div>
         <div
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style} ${small3} top-[45%] left-[30%]`}
+          className={`${style} ${small3} top-[45%] left-[35%]`}
         ></div>
         <div
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style} ${small3} top-[55%] left-[40%]`}
+          className={`${style} ${small3} top-[55%] left-[45%]`}
         ></div>
         <div
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style} ${small3} top-[10%] left-[65%]`}
+          className={`${style} ${small3} top-[10%] left-[70%]`}
         ></div>
         <div
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style} ${small3} top-[60%] left-[10%]`}
+          className={`${style} ${small3} top-[60%] left-[15%]`}
         ></div>
         <div
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style2} ${medium2} top-[35%] left-[21%]`}
+          className={`${style2} ${medium2} top-[35%] left-[26%]`}
         ></div>
         <div
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style2} ${medium2} top-[72%] left-[50%]`}
+          className={`${style2} ${medium2} top-[72%] left-[55%]`}
         ></div>
         <div
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style2} ${small2} top-[40%] left-[56%]`}
+          className={`${style2} ${small2} top-[40%] left-[61%]`}
         ></div>
         <div
           style={{
             transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
           }}
-          className={`${style} ${medium2} top-[30%] left-[35%]`}
+          className={`${style} ${medium2} top-[30%] left-[40%]`}
         ></div>
       </div>
     </div>
