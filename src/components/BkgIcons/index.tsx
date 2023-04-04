@@ -216,6 +216,18 @@ const BkgIcons = () => {
           }}
           className={`${style} ${medium2} top-[30%] left-[40%]`}
         ></div>
+        <div
+          style={{
+            transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
+          }}
+          className={`${style} ${medium2} top-[3%] left-[44%]`}
+        ></div>
+        <div
+          style={{
+            transform: `translate(${iconTransformX.slow}px, ${iconTransformY.slow}px)`,
+          }}
+          className={`${style2} ${small2} top-[-3%] left-[64%]`}
+        ></div>
       </div>
     </div>
   );
