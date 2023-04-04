@@ -103,7 +103,7 @@ const BkgIcons = () => {
           style={{
             transform: `translate(${iconTransformX.normal}px, ${iconTransformY.normal}px)`,
           }}
-          className={`${style} ${medium} top-[27%] left-[51%]`}
+          className={`${style} ${medium} top-[37%] left-[51%]`}
         />
         <img
           src={msql}
