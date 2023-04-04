@@ -28,12 +28,12 @@ export const useIconTransform = (container: RefObject<HTMLElement>) => {
       setIconTransformX({
         fast: ((offsetX - halfWidth) / halfWidth) * 300,
         normal: ((offsetX - halfWidth) / halfWidth) * 240,
-        slow: ((offsetX - halfWidth) / halfWidth) * 120,
+        slow: ((offsetX - halfWidth) / halfWidth) * 170,
       });
       setIconTransformY({
         fast: ((offsetY - halfHeight) / halfHeight) * 150,
         normal: ((offsetY - halfHeight) / halfHeight) * 100,
-        slow: ((offsetY - halfHeight) / halfHeight) * 50,
+        slow: ((offsetY - halfHeight) / halfHeight) * 80,
       });
     };
   

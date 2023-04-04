@@ -40,14 +40,14 @@ const BkgIcons = () => {
           style={{
             transform: `translate(${iconTransformX.fast}px, ${iconTransformY.fast}px)`,
           }}
-          className={`${style} ${large} top-[15%] left-[28%]`}
+          className={`${style} ${large} top-[17%] left-[18%]`}
         />
         <img
           src={htm}
           style={{
             transform: `translate(${iconTransformX.normal}px, ${iconTransformY.normal}px)`,
           }}
-          className={`${style} ${medium} top-[30%] left-[15%]`}
+          className={`${style} ${medium} top-[33%] left-[10%]`}
         />
         <img
           src={git}
@@ -68,7 +68,7 @@ const BkgIcons = () => {
           style={{
             transform: `translate(${iconTransformX.normal}px, ${iconTransformY.normal}px)`,
           }}
-          className={`${style} ${medium} top-[55%] left-[25%]`}
+          className={`${style} ${medium} top-[60%] left-[25%]`}
         />
         <img
           src={react}
@@ -96,14 +96,14 @@ const BkgIcons = () => {
           style={{
             transform: `translate(${iconTransformX.fast}px, ${iconTransformY.fast}px)`,
           }}
-          className={`${style} ${large} top-[23%] left-[72%]`}
+          className={`${style} ${large} top-[23%] left-[82%]`}
         />
         <img
           src={fbse}
           style={{
             transform: `translate(${iconTransformX.normal}px, ${iconTransformY.normal}px)`,
           }}
-          className={`${style} ${medium} top-[24%] left-[51%]`}
+          className={`${style} ${medium} top-[27%] left-[51%]`}
         />
         <img
           src={msql}

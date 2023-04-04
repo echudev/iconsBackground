@@ -1,7 +1,7 @@
 const style: string =
-  "absolute rounded-xl bg-iconBkg p-3 pointer-events-none transition-transform ease-out duration-1000";
+  "absolute rounded-xl bg-iconBkg p-3 pointer-events-none transition-transform ease-out duration-[3000ms]";
 const style2: string =
-  "absolute rounded-xl border border-4 border-iconBkg p-3 pointer-events-none transition-transform ease-out duration-1000";
+  "absolute rounded-xl border border-4 border-iconBkg p-3 pointer-events-none transition-transform ease-out duration-[3000ms]";
 const small2: string = "w-12 h-12 z-0 opacity-20";
 const small3: string = "w-12 h-12 z-0 opacity-10";
 const medium: string = "w-16 h-16 z-10 opacity-30";
