@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -8,6 +10,8 @@ module.exports = {
       },
       backgroundImage: {
         "overlay-pattern": "url('./src/assets/black-orchid.png')",
+        "gradient-radial":
+          "radial-gradient(circle, #202283 0%, #0f134c 50%, #020226 100%)",
       },
     },
   },
