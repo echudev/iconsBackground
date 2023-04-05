@@ -12,8 +12,8 @@ function App() {
     <div>
       <header
         ref={container}
-        onMouseMove={e => handleMousePosition(e.nativeEvent)}
-        className="h-screen w-screen bg-gradient-radial">
+        onMouseMove={e => handleMousePosition(e)}
+        className="h-screen w-screen bg-gradient-radial flex flex-col justify-center items-center">
         <Title />
         <BkgIcons
           iconTransformX={iconTransformX}

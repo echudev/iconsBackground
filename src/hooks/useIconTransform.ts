@@ -1,8 +1,8 @@
 import { useEffect, useState, RefObject } from 'react'
 
 interface MousePosition {
-  offsetX: number
-  offsetY: number
+  pageX: number
+  pageY: number
 }
 interface IconTransform {
   slow: number
@@ -24,16 +24,16 @@ export const useIconTransform = (container: RefObject<HTMLElement>) => {
   const [halfWidth, setHalfWidth] = useState<number>(1)
   const [halfHeight, setHalfHeight] = useState<number>(1)
 
-  const handleMousePosition = ({ offsetX, offsetY }: MousePosition) => {
+  const handleMousePosition = ({ pageX, pageY }: MousePosition) => {
     setIconTransformX({
-      fast: ((offsetX - halfWidth) / halfWidth) * 200,
-      normal: ((offsetX - halfWidth) / halfWidth) * 160,
-      slow: ((offsetX - halfWidth) / halfWidth) * 130,
+      fast: ((pageX - halfWidth) / halfWidth) * 200,
+      normal: ((pageX - halfWidth) / halfWidth) * 160,
+      slow: ((pageX - halfWidth) / halfWidth) * 130,
     })
     setIconTransformY({
-      fast: ((offsetY - halfHeight) / halfHeight) * 150,
-      normal: ((offsetY - halfHeight) / halfHeight) * 100,
-      slow: ((offsetY - halfHeight) / halfHeight) * 80,
+      fast: ((pageY - halfHeight) / halfHeight) * 150,
+      normal: ((pageY - halfHeight) / halfHeight) * 100,
+      slow: ((pageY - halfHeight) / halfHeight) * 80,
     })
   }
 

@@ -36,7 +36,7 @@ interface BkgIconsProps {
 
 const BkgIcons = ({ iconTransformX, iconTransformY }: BkgIconsProps) => {
   return (
-    <div className="relative w-full h-full bg-repeat bg-overlay-pattern z-40 overflow-hidden">
+    <div className="absolute w-full h-full bg-repeat bg-overlay-pattern z-40 overflow-hidden">
       <div className="flex w-full h-full select-none">
         <img
           src={js}
