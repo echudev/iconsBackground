@@ -13,13 +13,16 @@ function App() {
       <header
         ref={container}
         onMouseMove={e => handleMousePosition(e)}
-        className="h-screen w-screen bg-gradient-radial flex flex-col justify-center items-center">
+        className="h-screen w-full bg-gradient-radial flex flex-col justify-center items-center">
         <Title />
         <BkgIcons
           iconTransformX={iconTransformX}
           iconTransformY={iconTransformY}
         />
       </header>
+      <main className="flex flex-col items-center bg-repeat bg-overlay-pattern">
+        <div className="relative bottom-16 bg-iconBkg backdrop-blur-md w-80 h-32 rounded-xl z-50"></div>
+      </main>
     </div>
   )
 }

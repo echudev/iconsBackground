@@ -11,10 +11,10 @@ const Title = () => {
       </h3>
       <div className="pointer-events-auto flex justify-center self-center gap-10 mt-10">
         <button className="px-4 z-50 py-2 text-white bg-indigo-600 rounded-lg duration-150 hover:bg-indigo-700 active:shadow-lg">
-          Proyectos
+          PROYECTOS
         </button>
         <button className="px-4 py-2 text-white border rounded-lg duration-100 hover:border-indigo-400 hover:text-indigo-400 active:shadow-lg">
-          Sobre Mi
+          SOBRE MI
         </button>
       </div>
     </div>
