@@ -4,10 +4,23 @@
     "es2021": true,
     "node": true
   },
-  "extends": ["plugin:react/recommended", "standard-with-typescript", "prettier"],
+  "extends": [
+    "plugin:react/recommended",
+    "standard-with-typescript",
+    "prettier"
+  ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
-  "ignorePatterns": ["node_modules/", "dist/", "vscode/", "src/vite-env.d.ts", "vite.config.ts", "commitlint.config.js", "tailwind.config.cjs", "postcss.config.cjs"],
+  "ignorePatterns": [
+    "node_modules/",
+    "dist/",
+    "vscode/",
+    "src/vite-env.d.ts",
+    "vite.config.ts",
+    "commitlint.config.js",
+    "tailwind.config.cjs",
+    "postcss.config.cjs"
+  ],
   "parserOptions": {
     "ecmaVersion": "latest",
     "ecmaFeatures": {
@@ -27,7 +40,7 @@
     "react/jsx-max-props-per-line": [
       "error",
       {
-        "maximum": 1 // Establecer el máximo de propiedades por línea en 1
+        "maximum": 2 // Establecer el máximo de propiedades por línea en 1
       }
     ],
     "react/react-in-jsx-scope": "off",

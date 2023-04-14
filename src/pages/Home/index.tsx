@@ -1,18 +1,12 @@
-import { useRef } from 'react'
-import { useIconTransform } from '../../hooks/useIconTransform'
+import { useMousePositionStore } from '../../store/mousePositionStore'
 import BkgIcons from '../../components/BkgIcons'
 import Title from '../../components/Title'
 
 function Home() {
-  const container = useRef<HTMLDivElement | null>(null)
-  const { iconTransformX, iconTransformY, handleMousePosition } =
-    useIconTransform(container)
+  const { iconTransformX, iconTransformY } = useMousePositionStore()
 
   return (
-    <div
-      ref={container}
-      onMouseMove={e => handleMousePosition(e)}
-      className="h-screen w-full bg-gradient-radial flex flex-col justify-center items-center">
+    <div className="h-screen w-full bg-gradient-radial flex flex-col justify-center items-center">
       <Title />
       <BkgIcons
         iconTransformX={iconTransformX}
