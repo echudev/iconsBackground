@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 const Title = () => {
   return (
     <div className="flex flex-col justify-center z-50 pointer-events-none text-center font-mono w-fit rounded-lg p-5 text-white">
@@ -9,13 +10,17 @@ const Title = () => {
         Soy <b className="underline decoration-blue-400">Ezequiel</b>,
         desarrollador Frontend
       </h3>
-      <div className="pointer-events-auto flex justify-center self-center gap-10 mt-10">
-        <button className="px-4 z-50 py-2 text-white bg-indigo-600 rounded-lg duration-150 hover:bg-indigo-700 active:shadow-lg">
-          PROYECTOS
-        </button>
-        <button className="px-4 py-2 text-white border rounded-lg duration-100 hover:border-indigo-400 hover:text-indigo-400 active:shadow-lg">
-          SOBRE MI
-        </button>
+      <div className="pointer-events-auto flex justify-center self-center gap-10 mt-16">
+        <Link to={'/projects'}>
+          <button className="px-4 z-50 py-2 text-white bg-indigo-600 rounded-lg duration-150 hover:bg-indigo-700 active:shadow-lg">
+            PROYECTOS
+          </button>
+        </Link>
+        <Link to={'/about'}>
+          <button className="px-4 py-2 text-white border rounded-lg duration-100 hover:border-indigo-400 hover:text-indigo-400 active:shadow-lg">
+            SOBRE MI
+          </button>
+        </Link>
       </div>
     </div>
   )
