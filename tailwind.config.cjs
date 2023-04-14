@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors: {
         iconBkg: 'rgba(146, 146, 212, 0.25)',
-        borderColor: 'rgba(223, 223, 255, 0.15)',
+        navbarBkg: 'rgba(223, 223, 255, 0.05)',
+        borderColor: 'rgba(223, 223, 255, 0.10)',
         background: '#020226',
       },
       backgroundImage: {
