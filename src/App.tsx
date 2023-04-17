@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom'
-import Header from './components/Header'
+import Navbar from './components/Navbar'
 import { useEffect } from 'react'
 import { useMousePositionStore } from './store/mousePositionStore'
 
@@ -15,7 +15,7 @@ function App() {
   return (
     <div // This is the div that contains the entire app
       onMouseMove={e => handleMousePosition(e)}>
-      <Header />
+      <Navbar />
       <Outlet />
     </div>
   )

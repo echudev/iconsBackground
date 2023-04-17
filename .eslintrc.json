@@ -40,7 +40,7 @@
     "react/jsx-max-props-per-line": [
       "error",
       {
-        "maximum": 2 // Establecer el máximo de propiedades por línea en 1
+        "maximum": 3 // Establecer el máximo de propiedades por línea en 1
       }
     ],
     "react/react-in-jsx-scope": "off",
