@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 const Title = () => {
   return (
-    <div className="flex flex-col justify-center z-50 pointer-events-none text-center font-mono w-fit rounded-lg p-5 text-white">
+    <div className="flex flex-col justify-center z-50 pointer-events-none text-center font-mono w-fit rounded-2xl text-white backdrop-blur-sm border border-iconBkg p-14 shadow-2xl">
       <h1 className="text-5xl">Hola!🫡</h1>
       <p className="text-4xl uppercase font-bold mt-3 bg-gradient-to-r from-blue-500 to-violet-800 mix-blend-normal bg-clip-text text-transparent">
         Bienvenido a mi Portfolio

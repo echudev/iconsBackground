@@ -4,7 +4,7 @@
 const DarkIcon = () => {
   return (
     <svg
-      className="text-white fill-current stroke-current transition-all duration-300 group-hover:scale-125"
+      className="text-white fill-current stroke-current"
       version="1.1"
       id="Capa_1"
       xmlns="http://www.w3.org/2000/svg"
