@@ -4,6 +4,7 @@
 
 @layer base {
 html {
-background-color: #020226;
+color: #401220;
+background-color: hsl(287, 50%, 10%);
 }
 }

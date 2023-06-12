@@ -1,11 +1,15 @@
-import { Outlet } from 'react-router-dom'
-import Navbar from './components/Navbar'
 import { useEffect } from 'react'
 import { useMousePositionStore } from './store/mousePositionStore'
+import BkgIcons from './components/BkgIcons'
 
 function App() {
-  const { setHalfWidth, setHalfHeight, handleMousePosition } =
-    useMousePositionStore()
+  const {
+    setHalfWidth,
+    setHalfHeight,
+    handleMousePosition,
+    iconTransformX,
+    iconTransformY,
+  } = useMousePositionStore()
 
   useEffect(() => {
     setHalfWidth(window.innerWidth / 2)
@@ -13,10 +17,13 @@ function App() {
   }, [window.innerWidth, window.innerHeight])
 
   return (
-    <div // This is the div that contains the entire app
-      onMouseMove={e => handleMousePosition(e)}>
-      <Navbar />
-      <Outlet />
+    <div
+      onMouseMove={e => handleMousePosition(e)}
+      className="h-screen w-full px-6 bg-gradient-radial flex flex-col items-center">
+      <BkgIcons
+        iconTransformX={iconTransformX}
+        iconTransformY={iconTransformY}
+      />
     </div>
   )
 }
